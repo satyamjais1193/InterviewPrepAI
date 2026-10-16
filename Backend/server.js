@@ -18,9 +18,11 @@ connectToDB();
 
 // Why? Locally, the backend still uses port 3000. On Render, it uses the port supplied by the hosting service.
 // const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server is running on port ${PORT}`)
-})
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
 // require("dotenv").config()
