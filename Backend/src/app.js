@@ -11,7 +11,8 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://interview-prep-ai-khaki-eight.vercel.app"
+        "https://interview-prep-ai-khaki-eight.vercel.app",
+        "https://interview-prep-ai-git-main-satyamjais.vercel.app"
     ],
     credentials: true
 }))
