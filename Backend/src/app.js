@@ -6,8 +6,13 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
+
+// Ye change kya karta hai? Backend ab tumhari local development website aur deployed Vercel website, dono se browser requests accept karega. credentials: true authentication cookies ke liye zaroori hai.
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173",
+        "https://interview-prep-ai-khaki-eight.vercel.app"
+    ],
     credentials: true
 }))
 
