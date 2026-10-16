@@ -12,7 +12,8 @@ app.use(cors({
     origin: [
         "http://localhost:5173",
         "https://interview-prep-ai-khaki-eight.vercel.app",
-        "https://interview-prep-ai-git-main-satyamjais.vercel.app"
+        "https://interview-prep-ai-git-main-satyamjais.vercel.app",
+        "https://interview-prep-lpnj8585l-satyamjais.vercel.app"
     ],
     credentials: true
 }))
